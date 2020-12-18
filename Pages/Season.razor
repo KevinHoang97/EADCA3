@@ -1,0 +1,67 @@
+﻿@page "/season"
+@inject HttpClient Http
+
+
+<p>Data showing popular anime.</p>
+
+@if (Mains == null)
+{
+    <p><em>Problem with API</em></p>
+
+}
+else
+{
+
+    <h1>Popular anime in chosen Genre:</h1>
+    <div class="mb-2 p-3">
+        Choose a Genre:
+        <select class="form-control" @bind="genreId" @onclick="@GetDataAsync">
+            <option selected disabled value="-1"> Choose a </option>
+            <option value=1> Action</option>
+            <option value=2> Adventure</option>
+            <option value=4> Comedy</option>
+            <option value=6> Drama</option>
+            <option value=35> Slice of Life</option>
+        </select>
+    </div>
+
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>title</th>
+                <th>episode</th>
+                <th>Types</th>
+                <th>On Going</th>
+                <th>Source</th>
+                <th>Genre(s)</th>
+
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var ani in Mains.anime)
+            {
+                <tr>
+                    <td>@ani.title</td>
+                    <td>@ani.episodes</td>
+                    <td>@ani.type</td>
+                    <td>@ani.continuing</td>
+                    <td>@ani.source</td>
+
+                    <td>
+                        @foreach (var gen in ani.genres)
+                        {
+                        <td>@gen.name</td>
+                    }
+                        </td>
+                    </tr>
+
+                }
+        </tbody>
+    </table>
+
+
+
+
+}

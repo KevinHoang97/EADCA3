@@ -1,0 +1,54 @@
+﻿@page "/topanime"
+@inject HttpClient Http
+
+    <h1>Top Anime</h1>
+    <p>Data showing popular anime.</p>
+
+    @if (Main == null)
+    {
+        <p><em>Problem with API</em></p>
+       
+    }
+    else
+    {
+
+
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Title</th>
+                    <th>Episodes</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Score</th>
+
+                </tr>
+            </thead>
+            <tbody>
+
+
+
+
+                @foreach (var names in Main.top)
+                {
+                    <tr>
+                        <td>@names.rank</td>
+
+                        <td>@names.title</td>
+                        <td>@names.episodes</td>
+                        <td>@names.start_date</td>
+                        <td>@names.end_date</td>
+                        <td>@names.score</td>
+                    </tr>
+                }
+
+
+            </tbody>
+        </table>
+
+
+
+
+    }

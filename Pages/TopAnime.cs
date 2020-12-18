@@ -1,65 +1,63 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net.Http;
 using System.Threading.Tasks;
 using CA3.Shared;
 using Microsoft.AspNetCore.Components;
-
 namespace CA3.Pages
 {
-    public partial class Component : ComponentBase
-    {
-        private Root Main;
-        private string ErrorMessage;
-        private bool loadfail;
-
-        private async Task GetDataAsync()
+   
+        public partial class TopAnime : ComponentBase
         {
-            try
+            private Root Main;
+            private string ErrorMessage;
+
+            private async Task GetDataAsync()
             {
-
-               // var baseAddress = new Uri("https://api.jikan.moe/v3/");
-
-              //  using (var httpClient = new HttpClient { BaseAddress = baseAddress })
+                try
                 {
 
-                //    using (var response = await httpClient.GetAsync("top/anime/1/tv"))
-                  //  {
+                    // var baseAddress = new Uri("https://api.jikan.moe/v3/");
 
-                    //    string responseData = await response.Content.ReadAsStringAsync();
-                  //  }
+                    //  using (var httpClient = new HttpClient { BaseAddress = baseAddress })
+                    {
 
-                         string uri = "https://api.jikan.moe/v3/top/anime/1/tv";
-                      Main = await Http.GetJsonAsync<Root>(uri);
+                        //    using (var response = await httpClient.GetAsync("top/anime/1/tv"))
+                        //  {
+
+                        //    string responseData = await response.Content.ReadAsStringAsync();
+                        //  }
+
+                        string uri = "https://api.jikan.moe/v3/top/anime/1/tv";
+                        Main = await Http.GetJsonAsync<Root>(uri);
                         ErrorMessage = String.Empty;
-                    loadfail = false;
+                     
+                    }
+                }
+                catch (Exception e)
+                {
+                    ErrorMessage = e.Message;
                 }
             }
-            catch (Exception e)
+
+            protected override async Task OnInitializedAsync()
             {
-                loadfail = true;
-                ErrorMessage = e.Message;
+                await GetDataAsync();
             }
+
+
+
         }
-
-        protected override async Task OnInitializedAsync()
-        {
-            await GetDataAsync();
-        }
-
-
-
     }
-}
-//var baseAddress = new Uri("https://api.jikan.moe/v3/");
+    //var baseAddress = new Uri("https://api.jikan.moe/v3/");
 
-//using (var httpClient = new HttpClient { BaseAddress = baseAddress })
-//{
-
-  //  using (var response = await httpClient.GetAsync("top/{type}/{page}/{subtype}"))
+    //using (var httpClient = new HttpClient { BaseAddress = baseAddress })
     //{
 
-      //  string responseData = await response.Content.ReadAsStringAsync();
+    //  using (var response = await httpClient.GetAsync("top/{type}/{page}/{subtype}"))
+    //{
+
+    //  string responseData = await response.Content.ReadAsStringAsync();
     //}
-//}
+    //}
+

@@ -1,4 +1,3 @@
-C:\Users\Kevin\source\repos\CA3\obj\Debug\netstandard2.1\CA3.csprojAssemblyReference.cache
 C:\Users\Kevin\source\repos\CA3\obj\Debug\netstandard2.1\CA3.AssemblyInfoInputs.cache
 C:\Users\Kevin\source\repos\CA3\obj\Debug\netstandard2.1\CA3.AssemblyInfo.cs
 C:\Users\Kevin\source\repos\CA3\obj\Debug\netstandard2.1\CA3.csproj.CoreCompileInputs.cache
@@ -354,8 +353,11 @@ C:\Users\Kevin\source\repos\CA3\obj\Debug\netstandard2.1\staticwebassets\CA3.Sta
 C:\Users\Kevin\source\repos\CA3\obj\Debug\netstandard2.1\staticwebassets\CA3.StaticWebAssets.xml
 C:\Users\Kevin\source\repos\CA3\obj\Debug\netstandard2.1\CA3.dll
 C:\Users\Kevin\source\repos\CA3\obj\Debug\netstandard2.1\CA3.pdb
-C:\Users\Kevin\source\repos\CA3\obj\Debug\netstandard2.1\RazorDeclaration\Pages\Component.razor.g.cs
-C:\Users\Kevin\source\repos\CA3\obj\Debug\netstandard2.1\Razor\Pages\Component.razor.g.cs
-C:\Users\Kevin\source\repos\CA3\obj\Debug\netstandard2.1\integrity\7iNtfu-PV0ax_rDV0MoG4fsLZwabCLFM-VdVSgDg3TA=.hash
-C:\Users\Kevin\source\repos\CA3\obj\Debug\netstandard2.1\integrity\7YGYrf4Ab3Vf6wP_YZP8c_5l1n31vObTygxn9e3WG4A=.hash
-C:\Users\Kevin\source\repos\CA3\obj\Debug\netstandard2.1\integrity\S3hP05TWgORFsyzdUSP78lW3eggMpaBgnSZutswXDCA=.hash
+C:\Users\Kevin\source\repos\CA3\obj\Debug\netstandard2.1\RazorDeclaration\Pages\TopAnime.razor.g.cs
+C:\Users\Kevin\source\repos\CA3\obj\Debug\netstandard2.1\Razor\Pages\TopAnime.razor.g.cs
+C:\Users\Kevin\source\repos\CA3\obj\Debug\netstandard2.1\RazorDeclaration\Pages\Season.razor.g.cs
+C:\Users\Kevin\source\repos\CA3\obj\Debug\netstandard2.1\Razor\Pages\Season.razor.g.cs
+C:\Users\Kevin\source\repos\CA3\obj\Debug\netstandard2.1\CA3.csprojAssemblyReference.cache
+C:\Users\Kevin\source\repos\CA3\obj\Debug\netstandard2.1\integrity\mMvUpnb3b1J-TG_DPOykG8OQLrTTQJ7J3bGcQi86c3Y=.hash
+C:\Users\Kevin\source\repos\CA3\obj\Debug\netstandard2.1\integrity\XmEzryfk_uBkenM9F0gFeuN1yxGCBaDXScowj3Vr4fI=.hash
+C:\Users\Kevin\source\repos\CA3\obj\Debug\netstandard2.1\integrity\5w-s3r7a_oHUzWnNwgxNk0e7cH0Y6K7X8RcAj6Hymwg=.hash
